@@ -21,7 +21,7 @@ public:
     bool enqueue(int value)
     {
 
-        if ((frontq == 0 && rear == size - 1) || (rear == (frontq - 1) % (size - 1)))
+        if ((frontq == 0 && rear == size - 1) || (rear - frontq == -1))
         {
 
             return false;
